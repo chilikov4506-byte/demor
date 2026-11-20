@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Росенови – семейна къща за гости в Лясково, Родопите</title>
+<meta name="description" content="Открийте семейната къща за гости Росенови в с. Лясково, Родопите – домашна кухня, уютна механа с огнище и настаняване близо до Девин.">
+<meta name="theme-color" content="#1E130C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="bg_BG">
+<meta property="og:title" content="Росенови – вкусът на Родопите и уютът на дома">
+<meta property="og:description" content="Домашна родопска кухня, механа с огнище и спокойствие в с. Лясково.">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#1E130C; --walnut:#3A2416; --cream:#F5EFE4; --paper:#EDE4D3;
+  --ember:#C8662B; --cherry:#8E1F1B; --ink:#24170F; --muted:#7A6654; --line:rgba(36,23,15,.14);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:70px}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.over{font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(40px,7vw,76px)}
+h2 em,h1 em{font-style:italic;font-weight:400}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+nav.top{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 22px;color:var(--ink);background:rgba(245,239,228,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 6px 24px rgba(30,19,12,.10)}
+.navr{display:flex;align-items:center;gap:14px}
+.vbtn{display:inline-flex;align-items:center;gap:8px;background:#7360F2;color:#fff!important;padding:10px 16px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:0!important;transition:background .2s}
+.vbtn:hover{background:#5d48e0}
+.vbtn.lg{padding:17px 24px;font-size:13px;min-height:54px}
+.brand{font-family:var(--serif);font-size:26px;letter-spacing:.02em;line-height:1}
+.brand small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+nav.top{flex-wrap:wrap;row-gap:8px}
+nav.top .links{display:flex;order:3;width:100%;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:.04em;padding-top:8px;border-top:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav.top .phone{font-size:13px;letter-spacing:.06em;border-bottom:1px solid var(--line);padding-bottom:2px;display:none}
+
+/* HERO */
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;color:var(--cream);background:var(--night)}
+.hero img{position:absolute;inset:0;animation:kb 22s ease-out forwards;transform-origin:45% 60%}
+@keyframes kb{from{transform:scale(1.18)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,4,.55),rgba(20,10,4,.1) 30%,rgba(20,10,4,.25) 55%,rgba(20,10,4,.92))}
+.hero .in{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 22px 92px;max-width:1180px;margin:0 auto}
+.hero .over{color:#E9B98C;margin-bottom:18px}
+.hero h1{font-size:clamp(54px,8.6vw,112px);margin-bottom:22px}
+.hero p{max-width:440px;font-size:16px;opacity:.88;margin-bottom:30px}
+.cta{display:inline-flex;align-items:center;gap:14px;background:var(--cream);color:var(--ink);padding:17px 26px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.cta span{display:inline-block;transition:transform .3s}
+.cta:hover span{transform:translateX(5px)}
+.cta.dark{background:var(--ember);color:#fff}
+.hero .meta{position:absolute;right:22px;bottom:96px;z-index:2;text-align:right;display:none}
+.hero .meta b{font-family:var(--serif);font-size:54px;font-weight:500;display:block;line-height:1}
+.hero .meta span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.scroll{position:absolute;left:50%;bottom:26px;z-index:2;width:1px;height:46px;background:linear-gradient(rgba(245,239,228,.8),transparent);animation:sc 2.4s infinite}
+@keyframes sc{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ORNAMENT */
+.weave{height:18px;background:
+  linear-gradient(135deg,var(--cherry) 25%,transparent 25%) -9px 0/18px 18px,
+  linear-gradient(225deg,var(--cherry) 25%,transparent 25%) -9px 0/18px 18px,
+  linear-gradient(315deg,var(--cherry) 25%,transparent 25%) 0 0/18px 18px,
+  linear-gradient(45deg,var(--cherry) 25%,transparent 25%) 0 0/18px 18px,var(--ember);opacity:.95}
+
+/* INTRO */
+.intro{padding:110px 0 100px}
+.intro .grid{display:grid;gap:56px}
+.intro .lede{font-family:var(--serif);font-size:clamp(28px,4.4vw,44px);line-height:1.18;font-weight:400}
+.intro .lede em{color:var(--cherry)}
+.intro .txt{color:var(--muted);max-width:470px;margin-top:26px}
+.intro .sign{font-family:var(--serif);font-style:italic;font-size:24px;margin-top:20px}
+.frame{position:relative}
+.frame .a{aspect-ratio:4/5}
+.frame .b{position:absolute;width:46%;aspect-ratio:1;left:-14px;bottom:-34px;border:8px solid var(--cream)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:80px}
+.stats div{padding:26px 6px 0;border-right:1px solid var(--line)}
+.stats div:last-child{border:0}
+.stats b{display:block;font-family:var(--serif);font-size:clamp(40px,6vw,64px);font-weight:500;line-height:1}
+.stats span{font-size:12px;color:var(--muted);letter-spacing:.06em}
+
+/* TABLE */
+.table{background:var(--night);color:var(--cream);padding:110px 0}
+.table .over{color:#E9B98C}
+.table h2{margin:16px 0 22px}
+.table .sub{color:#CDBBA4;max-width:520px}
+.mosaic{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:44vw;gap:10px;margin:60px 0}
+.mosaic figure{overflow:hidden;position:relative}
+.mosaic figure img{transition:transform 1.2s ease}
+.mosaic figure:hover img{transform:scale(1.05)}
+.mosaic .big{grid-column:span 2;grid-row:span 2}
+.mosaic figcaption{position:absolute;left:14px;bottom:12px;font-family:var(--serif);font-style:italic;font-size:20px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.menu{display:grid;gap:50px}
+.menu ul{list-style:none}
+.menu li{display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid rgba(245,239,228,.12)}
+.menu li b{font-family:var(--serif);font-size:26px;font-weight:500}
+.menu li i{flex:1;border-bottom:1px dotted rgba(245,239,228,.3);transform:translateY(-6px)}
+.menu li span{font-size:13px;color:#CDBBA4}
+.lunch{border:1px solid rgba(233,185,140,.35);padding:34px 28px;position:relative}
+.lunch .over{margin-bottom:12px}
+.lunch h3{font-size:34px;margin-bottom:12px}
+.lunch p{color:#CDBBA4}
+
+/* MEHANA */
+.mehana{display:grid;background:var(--walnut);color:var(--cream)}
+.mehana .ph{aspect-ratio:4/3}
+.mehana .tx{padding:70px 26px}
+.mehana .tx .over{color:#E9B98C}
+.mehana h2{margin:16px 0 22px;font-size:clamp(38px,5.5vw,62px)}
+.mehana p{color:#D9C7AF;max-width:440px}
+.mehana .small{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px}
+.mehana .small div{aspect-ratio:1;overflow:hidden}
+
+/* STAY */
+.stay{padding:110px 0}
+.stay .head{display:grid;gap:20px;margin-bottom:56px}
+.stay .head p{color:var(--muted);max-width:460px}
+.rooms{display:grid;gap:40px}
+.room .ph{aspect-ratio:4/3;overflow:hidden;margin-bottom:22px}
+.room .ph img{transition:transform 1.2s}
+.room:hover .ph img{transform:scale(1.04)}
+.room .n{font-family:var(--serif);font-style:italic;color:var(--ember);font-size:18px}
+.room h3{font-size:34px;margin:4px 0 10px}
+.room p{color:var(--muted);font-size:15px}
+.room .row{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.room .row b{font-family:var(--serif);font-size:22px;letter-spacing:0;text-transform:none;font-weight:500}
+.amen{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:64px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.amen span::before{content:"◆";color:var(--ember);font-size:8px;margin-right:10px;vertical-align:middle}
+.direct{display:grid;gap:26px;background:var(--paper);padding:44px 30px;margin-top:64px}
+.direct h3{font-size:clamp(32px,4.5vw,46px)}
+.direct ul{list-style:none;display:grid;gap:10px;font-size:15px}
+.direct li{padding-left:26px;position:relative}
+.direct li::before{content:"";position:absolute;left:0;top:11px;width:14px;height:1px;background:var(--cherry)}
+
+/* REVIEWS */
+.rev{padding:110px 0;background:var(--paper)}
+.rev .scores{display:flex;flex-wrap:wrap;gap:40px;margin:30px 0 60px}
+.rev .scores b{font-family:var(--serif);font-size:58px;font-weight:500;line-height:1;display:block}
+.rev .scores span{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.feature{font-family:var(--serif);font-size:clamp(30px,5vw,54px);line-height:1.15;font-weight:400;max-width:900px}
+.feature::before{content:"“";display:block;font-size:110px;line-height:.6;color:var(--ember);margin-bottom:16px}
+.feature cite{display:block;font-family:var(--sans);font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:26px}
+.quotes{display:grid;gap:34px;margin-top:80px}
+.quotes blockquote{border-top:1px solid var(--line);padding-top:22px;font-size:15px}
+.quotes blockquote b{display:block;margin-top:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* AROUND */
+.around{position:relative;color:var(--cream);min-height:760px;display:flex;align-items:flex-end}
+.around>img{position:absolute;inset:0}
+.around::before{content:"";position:absolute;inset:0;background:rgba(20,10,4,.12)}
+.around .wrap{position:relative;padding-top:80px;padding-bottom:80px;width:100%}
+.around .panel{background:var(--cream);color:var(--ink);padding:40px 26px;box-shadow:0 24px 60px rgba(0,0,0,.35);max-width:760px}
+.around .panel .over{color:var(--cherry)}
+.around .panel .dist div{border-top:1px solid var(--line)}
+.around .panel .dist p{color:var(--muted)}
+.around .panel .dist p strong{color:var(--ink)}
+.around .panel .dist b{color:var(--cherry)}
+.around .panel .winter{color:var(--muted)}
+.around .over{color:#E9B98C}
+.around h2{margin:16px 0 40px}
+.dist{display:grid;gap:0}
+.dist div{display:flex;align-items:baseline;gap:20px;padding:16px 0;border-top:1px solid rgba(245,239,228,.25)}
+.dist b{font-family:var(--serif);font-size:42px;font-weight:500;min-width:96px;line-height:1}
+.dist b small{font-size:16px;margin-left:3px}
+.dist p{font-size:15px;color:#E4D6C3}
+.dist p strong{display:block;color:var(--cream);font-weight:600}
+.winter{margin-top:30px;font-size:14px;color:#E4D6C3;font-style:italic;font-family:var(--serif);font-size:20px}
+
+/* BOOK */
+.book{background:var(--night);color:var(--cream);padding:110px 0}
+.book .over{color:#E9B98C}
+.book h2{margin:16px 0 18px}
+.book .g{display:grid;gap:50px}
+.book p.s{color:#CDBBA4;max-width:420px}
+form{display:grid;gap:22px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:grid;gap:8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#CDBBA4}
+input,select{font:16px var(--sans);color:var(--cream);background:transparent;border:0;border-bottom:1px solid rgba(245,239,228,.35);padding:10px 0;border-radius:0;color-scheme:dark}
+select option{color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--ember)}
+form .cta{justify-content:center;border:0;cursor:pointer;font-family:var(--sans);margin-top:8px}
+.ok{display:none;font-family:var(--serif);font-style:italic;font-size:22px;color:#E9B98C}
+.alt{font-size:13px;color:#CDBBA4}
+
+footer{background:#140C07;color:#A8957E;padding:60px 0 40px;font-size:14px}
+footer .brand{color:var(--cream);font-size:34px}
+footer .cols{display:grid;gap:24px;margin-top:30px}
+footer .credit{margin-top:44px;padding-top:20px;border-top:1px solid #2C2016;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+
+
+/* RHODOPE FRAME */
+.rb{position:relative;padding:9px;background:#8E1F1B url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='16' height='16' fill='%238E1F1B'/%3E%3Cpath d='M8 1 15 8 8 15 1 8Z' fill='%23C8662B'/%3E%3Cpath d='M8 5 11 8 8 11 5 8Z' fill='%231E130C'/%3E%3Ccircle cx='8' cy='8' r='1.1' fill='%23F5EFE4'/%3E%3Ccircle cx='0' cy='0' r='1.4' fill='%23F5EFE4'/%3E%3Ccircle cx='16' cy='0' r='1.4' fill='%23F5EFE4'/%3E%3Ccircle cx='0' cy='16' r='1.4' fill='%23F5EFE4'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F5EFE4'/%3E%3C/svg%3E") repeat;box-shadow:0 18px 40px rgba(30,19,12,.25)}
+.rb::before{content:"";position:absolute;inset:3px;border:1px solid rgba(245,239,228,.55);pointer-events:none;z-index:2}
+.rb img{border:2px solid #F5EFE4}
+.mosaic figure.rb::after{inset:45% 9px 9px}
+.mosaic figure.rb figcaption{left:22px;bottom:18px;z-index:3}
+.frame .b.rb{border:0}
+
+/* STICKY */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--night);border-top:1px solid #3A2A1C}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:8px;padding:19px 4px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--cream)}
+.sticky a+a{border-left:1px solid #3A2A1C}
+.sticky a.v{background:#7360F2;color:#fff}
+.sticky a.b{background:var(--ember);color:#fff;border:0}
+
+@media(min-width:820px){
+  body{padding-bottom:0}
+  nav.top{padding:14px 44px}
+  nav.top .phone{display:inline}
+  nav.top{flex-wrap:nowrap}
+  nav.top .links{order:0;width:auto;justify-content:center;gap:34px;font-size:13px;padding-top:0;border:0}
+  .hero .in{padding:0 44px 110px}
+  .hero .meta{display:block;right:44px;bottom:116px}
+  .wrap{padding:0 44px}
+  .intro .grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:90px}
+  .frame .b{left:-60px;bottom:-50px;width:52%}
+  .mosaic{grid-template-columns:repeat(4,1fr);grid-auto-rows:240px}
+  .mosaic .big{grid-column:span 2;grid-row:span 2}
+  .mosaic .tall{grid-row:span 2}
+  .menu{grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+  .mehana{grid-template-columns:1.15fr 1fr}
+  .mehana .ph{aspect-ratio:auto}
+  .mehana .tx{padding:110px 70px}
+  .stay .head{grid-template-columns:1fr 1fr;align-items:end}
+  .rooms{grid-template-columns:repeat(3,1fr);gap:34px}
+  .rooms .room:nth-child(2){margin-top:70px}
+  .direct{grid-template-columns:1fr 1fr;align-items:center;padding:60px}
+  .quotes{grid-template-columns:repeat(3,1fr);gap:44px}
+  .dist{grid-template-columns:1fr 1fr;column-gap:50px}
+  .around .panel{padding:56px 60px}
+  .book .g{grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+  footer .cols{grid-template-columns:2fr 1fr 1fr}
+  .sticky{display:none}
+}
+
+/* POLISH / ACCESSIBILITY */
+.skip-link{position:fixed;left:12px;top:12px;z-index:100;background:var(--cream);color:var(--ink);padding:12px 16px;transform:translateY(-160%);transition:transform .2s}
+.skip-link:focus{transform:translateY(0)}
+:focus-visible{outline:2px solid var(--ember);outline-offset:4px}
+html{scroll-padding-top:110px}
+@media(min-width:820px){html{scroll-padding-top:80px}}
+::selection{background:var(--ember);color:#fff}
+nav.top .links a,nav.top .phone,footer a,.room .row a{transition:color .2s,border-color .2s}
+nav.top .links a:hover,nav.top .phone:hover,.room .row a:hover{color:var(--cherry)}
+footer a:hover{color:#E9B98C}
+.cta{min-height:54px;transition:background .25s,transform .25s,box-shadow .25s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.16)}
+.cta:active{transform:translateY(0)}
+.hero{isolation:isolate}
+.hero>img{z-index:0}
+.hero::after{z-index:1}
+.mosaic figure::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.48));pointer-events:none}
+.mosaic figcaption{z-index:1}
+.room .ph img,.mehana .ph img,.frame img{transition:transform .8s ease}
+.room:hover .ph img,.mehana .ph:hover img{transform:scale(1.035)}
+input,select{width:100%;min-height:44px}
+input::placeholder{color:#B8A58F}
+form .alt a{color:#E9B98C;text-decoration:underline;text-underline-offset:3px}
+.form-note{font-size:12px;color:#CDBBA4;line-height:1.5}
+.form-error{display:none;color:#FFD0B8;font-size:13px}
+.form-error.show{display:block}
+.ok{display:none}
+.sticky a{min-height:58px}
+footer{padding-bottom:100px}
+@media(min-width:820px){footer{padding-bottom:40px}}
+@media(max-width:420px){
+  .brand{font-size:23px}
+  nav.top .phone{font-size:11px}
+  .hero h1{font-size:clamp(45px,12vw,60px)}
+  .stats span{font-size:10px}
+  .sticky a{font-size:10px;letter-spacing:.1em}
+  .f2{grid-template-columns:1fr;gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Към съдържанието</a>
+<nav class="top" aria-label="Основна навигация">
+  <a class="brand" href="#">Росенови<small>Лясково · Родопите</small></a>
+  <div class="links"><a href="#trapeza">Трапезата</a><a href="#mehana">Механата</a><a href="#stai">Настаняване</a><a href="#naokolo">Наоколо</a></div>
+  <div class="navr"><a class="phone" href="tel:+359889026775">088 902 6775</a><a class="vbtn" href="viber://chat?number=%2B359889026775"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.9 2 3 5.4 3 10.2c0 2.7 1.3 5 3.4 6.5V21l3.6-2.1c.6.1 1.3.2 2 .2 5.1 0 9-3.4 9-8.4S17.1 2 12 2Zm4.3 11.6-.6.7c-.4.4-1 .5-1.5.3-2.2-.9-3.9-2.6-4.8-4.8-.2-.5-.1-1.1.3-1.5l.7-.6c.3-.3.3-.7.1-1l-.9-1.3c-.3-.4-.8-.4-1.1-.1l-.6.6c-.6.6-.8 1.5-.5 2.3 1.2 3.2 3.7 5.7 6.9 6.9.8.3 1.7.1 2.3-.5l.6-.6c.3-.3.3-.8-.1-1.1l-1.3-.9c-.3-.2-.7-.2-1 .1Z"/></svg>Viber</a></div>
+</nav>
+
+<main id="main">
+<header class="hero">
+  <img fetchpriority="high" decoding="async" src="img/hero.jpg" alt="Огнището в механата на Росенови">
+  <div class="in">
+    <div class="over">Семейна къща за гости · с. Лясково</div>
+    <h1>Огънят е запален.<br><em>Масата е сложена.</em></h1>
+    <p>Семейство Росенови ви посрещат в сърцето на Родопите с домашна кухня, механа с огнище и тишината на планината.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="cta" href="#book">Провери свободни дати <span>→</span></a><a class="vbtn lg" href="viber://chat?number=%2B359889026775"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.9 2 3 5.4 3 10.2c0 2.7 1.3 5 3.4 6.5V21l3.6-2.1c.6.1 1.3.2 2 .2 5.1 0 9-3.4 9-8.4S17.1 2 12 2Zm4.3 11.6-.6.7c-.4.4-1 .5-1.5.3-2.2-.9-3.9-2.6-4.8-4.8-.2-.5-.1-1.1.3-1.5l.7-.6c.3-.3.3-.7.1-1l-.9-1.3c-.3-.4-.8-.4-1.1-.1l-.6.6c-.6.6-.8 1.5-.5 2.3 1.2 3.2 3.7 5.7 6.9 6.9.8.3 1.7.1 2.3-.5l.6-.6c.3-.3.3-.8-.1-1.1l-1.3-.9c-.3-.2-.7-.2-1 .1Z"/></svg>Пиши ни във Viber</a></div>
+  </div>
+  <div class="meta"><b>4,9</b><span>97 отзива в Google</span></div>
+  <div class="scroll"></div>
+</header>
+<div class="weave"></div>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="over" style="color:var(--cherry)">Добре дошли</div>
+        <p class="lede" style="margin-top:22px">Тук не сте в хотел. <em>Гости сте на семейство,</em> което само готви, само пали огъня и само ще ви каже накъде да тръгнете сутрин.</p>
+        <p class="txt">Къщата е в тихото село Лясково, на 10 км от Девин и на 5 км от язовир Цанков камък. Двор с беседка и цветя, механа с родопски бит и стаи, в които се спи истински.</p>
+        <p class="sign">Румен и семейството</p>
+      </div>
+      <div class="frame reveal">
+        <div class="a rb"><img loading="lazy" decoding="async" src="img/house.jpg" alt="Къщата и градината"></div>
+        <div class="b rb"><img loading="lazy" decoding="async" src="img/arch.jpg" alt="Входът към двора"></div>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div><b>4,9</b><span>в Google · 97 отзива</span></div>
+      <div><b>12</b><span>места за гости</span></div>
+      <div><b>5 км</b><span>до Цанков камък</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap g">
+    <div class="reveal">
+      <div class="over">Свободни дати</div>
+      <h2>Кажете ни<br><em>кога идвате</em></h2>
+      <p class="s">Отговаряме лично, обикновено до няколко часа. Директно при нас е по-изгодно от сайтовете за резервации.</p>
+    </div>
+    <form class="reveal" id="booking-form">
+      <div class="f2">
+        <label>Пристигане<input id="arrival" name="arrival" type="date" required></label>
+        <label>Заминаване<input id="departure" name="departure" type="date" required></label>
+      </div>
+      <div class="f2">
+        <label>Гости<select id="guests" name="guests"><option>2 възрастни</option><option>2 възрастни + 1 дете</option><option>2 възрастни + 2 деца</option><option>Група до 12 души</option></select></label>
+        <label>Вечеря<select id="dinner" name="dinner"><option>С вечеря</option><option>Без вечеря</option><option>Ще уточним по телефона</option></select></label>
+      </div>
+      <label>Вашето име<input id="guest-name" name="guest-name" type="text" placeholder="Как да се обръщаме към вас?"></label>
+      <label>Телефон за връзка<input id="guest-phone" name="guest-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="08…" required></label>
+      <p class="form-error" id="date-error" role="alert">Датата на заминаване трябва да е след датата на пристигане.</p>
+      <button class="cta dark" type="submit">Изпрати запитване във Viber <span>→</span></button>
+      <p class="form-note">Ще се отвори Viber със съставено съобщение. Изберете Росенови като получател и натиснете „Изпрати“. Свободните дати се потвърждават лично.</p>
+      <p class="alt">Предпочитате да се обадите? <a href="tel:+359889026775">088 902 6775</a></p>
+      <a class="vbtn lg" style="justify-content:center" href="viber://chat?number=%2B359889026775"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.9 2 3 5.4 3 10.2c0 2.7 1.3 5 3.4 6.5V21l3.6-2.1c.6.1 1.3.2 2 .2 5.1 0 9-3.4 9-8.4S17.1 2 12 2Zm4.3 11.6-.6.7c-.4.4-1 .5-1.5.3-2.2-.9-3.9-2.6-4.8-4.8-.2-.5-.1-1.1.3-1.5l.7-.6c.3-.3.3-.7.1-1l-.9-1.3c-.3-.4-.8-.4-1.1-.1l-.6.6c-.6.6-.8 1.5-.5 2.3 1.2 3.2 3.7 5.7 6.9 6.9.8.3 1.7.1 2.3-.5l.6-.6c.3-.3.3-.8-.1-1.1l-1.3-.9c-.3-.2-.7-.2-1 .1Z"/></svg>Пиши директно във Viber</a>
+    </form>
+  </div>
+</section>
+
+<div class="weave"></div>
+<section class="table" id="trapeza">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="over">Трапезата</div>
+      <h2>Заради храната идват.<br><em>Заради хората се връщат.</em></h2>
+      <p class="sub">Това пишат гостите най-често. Всичко се готви на място, по родопски, в глинени гювечета и на огнището.</p>
+    </div>
+    <div class="mosaic reveal">
+      <figure class="big rb"><img loading="lazy" decoding="async" src="img/table.jpg" alt="Сложена трапеза"><figcaption>Вечеря за цялата компания</figcaption></figure>
+      <figure class="rb"><img loading="lazy" decoding="async" src="img/gyuveche.jpg" alt="Гювече"><figcaption>Гювече</figcaption></figure>
+      <figure class="rb"><img loading="lazy" decoding="async" src="img/patatnik.jpg" alt="Пататник"><figcaption>Пататник</figcaption></figure>
+      <figure class="rb"><img loading="lazy" decoding="async" src="img/breakfast.jpg" alt="Домашна закуска"><figcaption>Закуска</figcaption></figure>
+      <figure class="rb"><img loading="lazy" decoding="async" src="img/soup.jpg" alt="Домашна чорба"><figcaption>Чорба</figcaption></figure>
+    </div>
+    <div class="menu">
+      <ul class="reveal">
+        <li><b>Пататник</b><i></i><span>родопски</span></li>
+        <li><b>Гювече</b><i></i><span>в глинен съд</span></li>
+        <li><b>Таратор</b><i></i><span>лятото</span></li>
+        <li><b>Чеверме</b><i></i><span>на огнището</span></li>
+        <li><b>Домашна ракия</b><i></i><span>от стопанина</span></li>
+      </ul>
+      <div class="lunch reveal">
+        <div class="over">Само минавате?</div>
+        <h3>Отбийте се за обяд.</h3>
+        <p>Механата посреща и гости, които не нощуват. Обадете се половин час по-рано и масата ще ви чака.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mehana" id="mehana">
+  <div class="ph"><img loading="lazy" decoding="async" src="img/mehana.jpg" alt="Механата с огнището"></div>
+  <div class="tx reveal">
+    <div class="over">Механата</div>
+    <h2>Дърво, камък<br><em>и родопска музика</em></h2>
+    <p>Вечерите тук са дълги. Огнище, черги по масите, стари сечива по стените. Гостите пишат, че стопаните „не само готвят, а те запознават със стария бит“.</p>
+    <div class="small"><div class="rb"><img loading="lazy" decoding="async" src="img/interior.jpg" alt="Интериорът на механата"></div><div class="rb"><img loading="lazy" decoding="async" src="img/ext.jpg" alt="Беседката пред къщата"></div></div>
+  </div>
+</section>
+
+<section class="stay" id="stai">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><div class="over" style="color:var(--cherry)">Настаняване</div><h2 style="margin-top:16px">Чисто, топло<br><em>и тихо</em></h2></div>
+      <p>Всички стаи са със собствена баня, телевизор, Wi-Fi и отопление. За двойки, семейства или цялата компания.</p>
+    </div>
+    <div class="rooms">
+      <div class="room reveal"><div class="ph rb"><img loading="lazy" decoding="async" src="img/interior.jpg" alt="Интериор на стая за гости"></div><div class="n">01</div><h3>Двойна стая</h3><p>За двама. Тиха, с изглед към двора.</p><div class="row"><b>от … €</b><a href="#book">Запитване →</a></div></div>
+      <div class="room reveal"><div class="ph rb"><img loading="lazy" decoding="async" src="img/house.jpg" alt="Къщата за гости отвън"></div><div class="n">02</div><h3>Студио</h3><p>За семейство с деца. Повече място и удобства.</p><div class="row"><b>от … €</b><a href="#book">Запитване →</a></div></div>
+      <div class="room reveal"><div class="ph rb"><img loading="lazy" decoding="async" src="img/aerial.jpg" alt="Цялата къща"></div><div class="n">03</div><h3>Цялата къща</h3><p>До 12 души. Механата и дворът само за вас.</p><div class="row"><b>по запитване</b><a href="#book">Запитване →</a></div></div>
+    </div>
+    <div class="amen reveal"><span>Механа с огнище</span><span>Беседка и двор</span><span>Барбекю</span><span>Детски кът</span><span>Безплатен паркинг</span><span>Wi-Fi</span></div>
+    <div class="direct reveal">
+      <h3>Резервирайте директно.<br><em>Без посредник.</em></h3>
+      <ul><li>По-добра цена, отколкото в сайтовете за резервации</li><li>Говорите направо със стопаните</li><li>Питайте за вечеря, обяд или специално меню</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="rev">
+  <div class="wrap">
+    <div class="over" style="color:var(--cherry)">Какво казват гостите</div>
+    <div class="scores reveal">
+      <div><b>4,9</b><span>Google · 97 отзива</span></div>
+      <div><b>10</b><span>Booking · от 10</span></div>
+      <div><b>100%</b><span>препоръчват · Facebook</span></div>
+    </div>
+    <p class="feature reveal">Попадаш в домашния селски уют при баба и дядо. Хора с големи сърца.<cite>Евгения · Facebook</cite></p>
+    <div class="quotes">
+      <blockquote class="reveal">Тръгнахме без план и спряхме у Росенови за вечеря. Не само ни нахраниха с вкусна домашна храна, но и ни настаниха за нощта.<b>Радостин · Google</b></blockquote>
+      <blockquote class="reveal">Тихо, удобно, с големи бани. Механата е уютна и топла, приготвят се традиционни специалитети. Истинска родопска почивка.<b>Александър · Google</b></blockquote>
+      <blockquote class="reveal">Спряхме само за обяд. Ядохме пататник, таратор и гювече. Градината и украсата правят атмосферата спокойна.<b>Ели · Google</b></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="around" id="naokolo">
+  <img loading="lazy" decoding="async" src="img/river.jpg" alt="Планинската река край Лясково">
+  <div class="wrap"><div class="panel reveal">
+    <div class="over">Наоколо</div>
+    <h2>Родопите са<br><em>на прага</em></h2>
+    <div class="dist">
+      <div><b>5<small>км</small></b><p><strong>Язовир Цанков камък</strong>Риболов, разходки и гледки</p></div>
+      <div><b>10<small>км</small></b><p><strong>Девин</strong>Минерални басейни и СПА</p></div>
+      <div><b>0<small>км</small></b><p><strong>Пътеки и река</strong>Еко пътеки и вело маршрути от селото</p></div>
+      <div><b>70<small>км</small></b><p><strong>Пловдив</strong>Около час и половина с кола</p></div>
+    </div>
+    <p class="winter">Идвате през зимата? Обадете се преди тръгване и ще ви кажем какъв е пътят.</p>
+  </div></div>
+</section>
+
+
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Росенови</div>
+    <div class="cols">
+      <div>Семейна къща за гости в Родопите<br>ул. „Дряна“, с. Лясково, общ. Девин</div>
+      <div><a href="tel:+359889026775">088 902 6775</a><br><a href="viber://chat?number=%2B359889026775">Viber</a></div>
+      <div><a href="https://www.facebook.com/relaxation.rosenovi" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+    </div>
+    <div class="credit">Демо от ChilikovWeb · chilikovweb.com</div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a href="tel:+359889026775">Обади се</a>
+  <a class="v" href="viber://chat?number=%2B359889026775"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.9 2 3 5.4 3 10.2c0 2.7 1.3 5 3.4 6.5V21l3.6-2.1c.6.1 1.3.2 2 .2 5.1 0 9-3.4 9-8.4S17.1 2 12 2Zm4.3 11.6-.6.7c-.4.4-1 .5-1.5.3-2.2-.9-3.9-2.6-4.8-4.8-.2-.5-.1-1.1.3-1.5l.7-.6c.3-.3.3-.7.1-1l-.9-1.3c-.3-.4-.8-.4-1.1-.1l-.6.6c-.6.6-.8 1.5-.5 2.3 1.2 3.2 3.7 5.7 6.9 6.9.8.3 1.7.1 2.3-.5l.6-.6c.3-.3.3-.8-.1-1.1l-1.3-.9c-.3-.2-.7-.2-1 .1Z"/></svg>Viber</a>
+  <a class="b" href="#book">Свободни дати</a>
+</div>
+
+<script>
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealItems = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(item => observer.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('in'));
+  }
+
+  const form = document.getElementById('booking-form');
+  if (!form) return;
+
+  const arrival = document.getElementById('arrival');
+  const departure = document.getElementById('departure');
+  const error = document.getElementById('date-error');
+  const today = new Date();
+  const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 10);
+
+  arrival.min = localToday;
+  departure.min = localToday;
+
+  arrival.addEventListener('change', () => {
+    departure.min = arrival.value || localToday;
+    if (departure.value && departure.value <= arrival.value) departure.value = '';
+    error.classList.remove('show');
+  });
+  departure.addEventListener('change', () => error.classList.remove('show'));
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    if (!arrival.value || !departure.value || departure.value <= arrival.value) {
+      error.classList.add('show');
+      departure.focus();
+      return;
+    }
+
+    const name = document.getElementById('guest-name').value.trim() || 'Не е посочено';
+    const phone = document.getElementById('guest-phone').value.trim();
+    const guests = document.getElementById('guests').value;
+    const dinner = document.getElementById('dinner').value;
+    const message = [
+      'Здравейте, Росенови! Искам да попитам за свободни дати.',
+      'Име: ' + name,
+      'Пристигане: ' + arrival.value,
+      'Заминаване: ' + departure.value,
+      'Гости: ' + guests,
+      'Вечеря: ' + dinner,
+      'Телефон: ' + phone
+    ].join('\n');
+
+    const viberUrl = 'viber://forward?text=' + encodeURIComponent(message);
+    window.location.href = viberUrl;
+  });
+})();
+</script>
+</body>
+</html>
